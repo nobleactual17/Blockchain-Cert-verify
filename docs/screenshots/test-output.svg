@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <rect x="16" y="16" width="948" height="488" rx="8" fill="#f6f8fa" stroke="#d0d7de" />
+  <text x="32" y="56" font-family="Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#111">
+    <tspan x="32" dy="0">npm test (truffle test)</tspan>
+    <tspan x="32" dy="20">&gt; blockchain-cert-verify@1.0.0 test</tspan>
+    <tspan x="32" dy="20">&gt; truffle test</tspan>
+    <tspan x="32" dy="20"></tspan>
+    <tspan x="32" dy="20">Compiling your contracts...</tspan>
+    <tspan x="32" dy="20">===========================</tspan>
+    <tspan x="32" dy="20">&gt; Compiling ./contracts/CertificateVerification.sol</tspan>
+    <tspan x="32" dy="20">&gt; Compiling ./contracts/Migrations.sol</tspan>
+    <tspan x="32" dy="20">&gt; Artifacts written to /tmp/test--4247-h5w6aVJtlXy5</tspan>
+    <tspan x="32" dy="20">&gt; Compiled successfully using:</tspan>
+    <tspan x="32" dy="20">   - solc: 0.8.35+commit.47b9dedd.Emscripten.clang</tspan>
+    <tspan x="32" dy="20"></tspan>
+    <tspan x="32" dy="20">Contract: CertificateVerification</tspan>
+    <tspan x="32" dy="20">  ✓ adds a certificate with default unverified status (43ms)</tspan>
+    <tspan x="32" dy="20">  ✓ verifies an existing certificate (52ms)</tspan>
+    <tspan x="32" dy="20">  ✓ reverts when adding a duplicate certificate (147ms)</tspan>
+    <tspan x="32" dy="20">  ✓ reverts when verifying a missing certificate</tspan>
+    <tspan x="32" dy="20"></tspan>
+    <tspan x="32" dy="20">4 passing (349ms)</tspan>
+  </text>
+</svg>

@@ -63,6 +63,16 @@ package.json
   4 passing
 ```
 
+## Verification Screenshots
+
+Latest local verification run (compile, migrate, tests):
+
+- Compile + migrate output: `docs/screenshots/compile-migrate-output.svg`
+- Test output: `docs/screenshots/test-output.svg`
+
+![Compile and migrate output](docs/screenshots/compile-migrate-output.svg)
+![Test output](docs/screenshots/test-output.svg)
+
 ## Smart Contract Overview
 
 - **addCertificate(certificateId, studentName, courseName)**  

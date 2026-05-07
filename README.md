@@ -51,6 +51,23 @@ package.json
    npm test
    ```
 
+## Run from the terminal (commands to record)
+
+Open two terminals. Keep Ganache running in the first one, then run the compile/migrate/tests in the second one.
+
+**Terminal 1**
+```bash
+npm install
+npm run ganache
+```
+
+**Terminal 2**
+```bash
+npm run compile
+npm run migrate
+npm test
+```
+
 ## Expected Test Output
 
 ```

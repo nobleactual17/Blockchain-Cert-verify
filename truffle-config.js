@@ -111,7 +111,7 @@ module.exports = {
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       settings: {
         // Use a widely supported EVM version for local chains like Ganache.
-        evmVersion: "istanbul",
+        evmVersion: "london",
       },
     }
   },

@@ -17,7 +17,6 @@ contract CertificateVerification {
 
     // Mapping from certificate ID to its details.
     mapping(uint256 => Certificate) public certificates;
-    mapping(uint256 => bool) public certificateExists;
 
     // Events make it easy to track changes in the blockchain logs.
     event CertificateAdded(uint256 certificateId, string studentName, string courseName);
@@ -32,7 +31,8 @@ contract CertificateVerification {
         string memory courseName
     ) public {
         require(certificateId != 0, "Certificate ID must be non-zero");
-        require(!certificateExists[certificateId], "Certificate already exists");
+        // Default structs have certificateId = 0, so we treat ID 0 as "not stored".
+        require(certificates[certificateId].certificateId == 0, "Certificate already exists");
 
         certificates[certificateId] = Certificate({
             certificateId: certificateId,
@@ -40,7 +40,6 @@ contract CertificateVerification {
             courseName: courseName,
             isVerified: false
         });
-        certificateExists[certificateId] = true;
 
         emit CertificateAdded(certificateId, studentName, courseName);
     }
@@ -49,7 +48,7 @@ contract CertificateVerification {
      * @dev Marks a certificate as verified.
      */
     function verifyCertificate(uint256 certificateId) public {
-        require(certificateExists[certificateId], "Certificate not found");
+        require(certificates[certificateId].certificateId != 0, "Certificate not found");
 
         certificates[certificateId].isVerified = true;
         emit CertificateVerified(certificateId);

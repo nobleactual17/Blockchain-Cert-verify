@@ -17,6 +17,23 @@ truffle-config.js
 package.json
 ```
 
+## Project Walkthrough
+
+1. **Smart contracts** (`contracts/`):
+   - `CertificateVerification.sol` stores certificates in a mapping, emits events, and exposes `addCertificate` + `verifyCertificate`.
+   - `Migrations.sol` is Truffle’s bookkeeping contract for migration history.
+2. **Migrations** (`migrations/`):
+   - `1_initial_migration.js` deploys the Truffle migrations contract.
+   - `2_deploy_contract.js` deploys the certificate verification contract.
+3. **Configuration** (`truffle-config.js`):
+   - Targets a local Ganache node on `127.0.0.1:8545`.
+   - Uses the bundled `solc` JavaScript build for offline-friendly compilation.
+4. **Tests** (`test/certificateVerification.test.js`):
+   - Adds certificates, verifies them, and asserts reverts for invalid operations.
+5. **Scripts** (`package.json`):
+   - `npm run ganache` starts the local chain.
+   - `npm run compile`, `npm run migrate`, and `npm test` handle build + deployment + tests.
+
 ## Prerequisites
 
 - Node.js 18+ and npm

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="1760" viewBox="0 0 980 1760">
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <rect x="16" y="16" width="948" height="1728" rx="8" fill="#f6f8fa" stroke="#d0d7de" />
+  <text x="32" y="56" font-family="Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#111">
+    <tspan x="32" dy="0">npm run compile + npm run migrate</tspan>
+    <tspan x="32" dy="20">&gt; blockchain-cert-verify@1.0.0 compile</tspan>
+    <tspan x="32" dy="20">&gt; truffle compile</tspan>
+    <tspan x="32" dy="20"></tspan>
+    <tspan x="32" dy="20">Compiling your contracts...</tspan>
+    <tspan x="32" dy="20">===========================</tspan>
+    <tspan x="32" dy="20">&gt; Compiling ./contracts/CertificateVerification.sol</tspan>
+    <tspan x="32" dy="20">&gt; Compiling ./contracts/Migrations.sol</tspan>
+    <tspan x="32" dy="20">&gt; Artifacts written to /home/runner/work/Blockchain-Cert-verify/Blockchain-Cert-verify/build/contracts</tspan>
+    <tspan x="32" dy="20">&gt; Compiled successfully using:</tspan>
+    <tspan x="32" dy="20">   - solc: 0.8.35+commit.47b9dedd.Emscripten.clang</tspan>
+    <tspan x="32" dy="20"></tspan>
+    <tspan x="32" dy="20">&gt; blockchain-cert-verify@1.0.0 migrate</tspan>
+    <tspan x="32" dy="20">&gt; truffle migrate --network development</tspan>
+    <tspan x="32" dy="20"></tspan>
+    <tspan x="32" dy="20">Compiling your contracts...</tspan>
+    <tspan x="32" dy="20">===========================</tspan>
+    <tspan x="32" dy="20">&gt; Everything is up to date, there is nothing to compile.</tspan>
+    <tspan x="32" dy="20"></tspan>
+    <tspan x="32" dy="20">Starting migrations...</tspan>
+    <tspan x="32" dy="20">======================</tspan>
+    <tspan x="32" dy="20">&gt; Network name:    'development'</tspan>
+    <tspan x="32" dy="20">&gt; Network id:      1778133183848</tspan>
+    <tspan x="32" dy="20">&gt; Block gas limit: 30000000 (0x1c9c380)</tspan>
+    <tspan x="32" dy="20"></tspan>
+    <tspan x="32" dy="20">1_initial_migration.js</tspan>
+    <tspan x="32" dy="20">======================</tspan>
+    <tspan x="32" dy="20"></tspan>
+    <tspan x="32" dy="20">   Deploying 'Migrations'</tspan>
+    <tspan x="32" dy="20">   ----------------------</tspan>
+    <tspan x="32" dy="20">   &gt; transaction hash:    0xe9d8bb2e6ef983646674b6b12dfd4eee5a764f19ff751e37a88f3810d0381f64</tspan>
+    <tspan x="32" dy="20">- Blocks: 0            Seconds: 0</tspan>
+    <tspan x="32" dy="20">   &gt; Blocks: 0            Seconds: 0</tspan>
+    <tspan x="32" dy="20">   &gt; contract address:    0x19f96331fd1d1b509773d7036e20E79B2bb66470</tspan>
+    <tspan x="32" dy="20">   &gt; block number:        13</tspan>
+    <tspan x="32" dy="20">   &gt; block timestamp:     1778133218</tspan>
+    <tspan x="32" dy="20">   &gt; account:             0x321722920668D04c7a6d317E4Af3701B429dbc23</tspan>
+    <tspan x="32" dy="20">   &gt; balance:             999.986826207764343878</tspan>
+    <tspan x="32" dy="20">   &gt; gas used:            250184 (0x3d148)</tspan>
+    <tspan x="32" dy="20">   &gt; gas price:           2.683580943 gwei</tspan>
+    <tspan x="32" dy="20">   &gt; value sent:          0 ETH</tspan>
+    <tspan x="32" dy="20">   &gt; total cost:          0.000671389014643512 ETH</tspan>
+    <tspan x="32" dy="20"></tspan>
+    <tspan x="32" dy="20">- Saving migration to chain.</tspan>
+    <tspan x="32" dy="20">   &gt; Saving migration to chain.</tspan>
+    <tspan x="32" dy="20">   &gt; Saving artifacts</tspan>
+    <tspan x="32" dy="20">   -------------------------------------</tspan>
+    <tspan x="32" dy="20">   &gt; Total cost:     0.000671389014643512 ETH</tspan>
+    <tspan x="32" dy="20"></tspan>
+    <tspan x="32" dy="20">2_deploy_contract.js</tspan>
+    <tspan x="32" dy="20">====================</tspan>
+    <tspan x="32" dy="20"></tspan>
+    <tspan x="32" dy="20">   Deploying 'CertificateVerification'</tspan>
+    <tspan x="32" dy="20">   -----------------------------------</tspan>
+    <tspan x="32" dy="20">   &gt; transaction hash:    0x2fe423089eda76185c1642abb8035f125afbb8b37b4332f84e6a149ed9f930b1</tspan>
+    <tspan x="32" dy="20">- Blocks: 0            Seconds: 0</tspan>
+    <tspan x="32" dy="20">   &gt; Blocks: 0            Seconds: 0</tspan>
+    <tspan x="32" dy="20">   &gt; contract address:    0xE23708300b6F6cd61c454841cDa294B715cE8F20</tspan>
+    <tspan x="32" dy="20">   &gt; block number:        15</tspan>
+    <tspan x="32" dy="20">   &gt; block timestamp:     1778133218</tspan>
+    <tspan x="32" dy="20">   &gt; account:             0x321722920668D04c7a6d317E4Af3701B429dbc23</tspan>
+    <tspan x="32" dy="20">   &gt; balance:             999.984785743685778312</tspan>
+    <tspan x="32" dy="20">   &gt; gas used:            726363 (0xb155b)</tspan>
+    <tspan x="32" dy="20">   &gt; gas price:           2.640950665 gwei</tspan>
+    <tspan x="32" dy="20">   &gt; value sent:          0 ETH</tspan>
+    <tspan x="32" dy="20">   &gt; total cost:          0.001918288847881395 ETH</tspan>
+    <tspan x="32" dy="20"></tspan>
+    <tspan x="32" dy="20">- Saving migration to chain.</tspan>
+    <tspan x="32" dy="20">   &gt; Saving migration to chain.</tspan>
+    <tspan x="32" dy="20">   &gt; Saving artifacts</tspan>
+    <tspan x="32" dy="20">   -------------------------------------</tspan>
+    <tspan x="32" dy="20">   &gt; Total cost:     0.001918288847881395 ETH</tspan>
+    <tspan x="32" dy="20"></tspan>
+    <tspan x="32" dy="20">Summary</tspan>
+    <tspan x="32" dy="20">=======</tspan>
+    <tspan x="32" dy="20">&gt; Total deployments:   2</tspan>
+    <tspan x="32" dy="20">&gt; Final cost:          0.002589677862524907 ETH</tspan>
+  </text>
+</svg>

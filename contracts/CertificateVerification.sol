@@ -4,6 +4,7 @@ pragma solidity ^0.8.0;
 /**
  * @title CertificateVerification
  * @dev Stores and verifies student certificates for demo purposes.
+ *      Anyone can add or verify certificates in this open lab example.
  */
 contract CertificateVerification {
     // Certificate data stored on-chain.
@@ -16,6 +17,7 @@ contract CertificateVerification {
 
     // Mapping from certificate ID to its details.
     mapping(uint256 => Certificate) public certificates;
+    mapping(uint256 => bool) public certificateExists;
 
     // Events make it easy to track changes in the blockchain logs.
     event CertificateAdded(uint256 certificateId, string studentName, string courseName);
@@ -30,7 +32,7 @@ contract CertificateVerification {
         string memory courseName
     ) public {
         require(certificateId != 0, "Certificate ID must be non-zero");
-        require(certificates[certificateId].certificateId == 0, "Certificate already exists");
+        require(!certificateExists[certificateId], "Certificate already exists");
 
         certificates[certificateId] = Certificate({
             certificateId: certificateId,
@@ -38,6 +40,7 @@ contract CertificateVerification {
             courseName: courseName,
             isVerified: false
         });
+        certificateExists[certificateId] = true;
 
         emit CertificateAdded(certificateId, studentName, courseName);
     }
@@ -46,7 +49,7 @@ contract CertificateVerification {
      * @dev Marks a certificate as verified.
      */
     function verifyCertificate(uint256 certificateId) public {
-        require(certificates[certificateId].certificateId != 0, "Certificate not found");
+        require(certificateExists[certificateId], "Certificate not found");
 
         certificates[certificateId].isVerified = true;
         emit CertificateVerified(certificateId);

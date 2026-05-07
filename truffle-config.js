@@ -45,6 +45,7 @@
 // const { MNEMONIC, PROJECT_ID } = process.env;
 
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
+const solcPath = require.resolve("solc/soljson.js");
 
 module.exports = {
   /**
@@ -106,7 +107,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "./node_modules/solc/soljson.js", // Use local solc-js for offline-friendly builds
+      version: solcPath, // Use local solc-js for offline-friendly builds
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       settings: {
         // Use a widely supported EVM version for local chains like Ganache.

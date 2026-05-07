@@ -1,0 +1,26 @@
+{
+  "name": "blockchain-cert-verify",
+  "version": "1.0.0",
+  "description": "Certificate verification system using Solidity, Truffle, and Ganache.",
+  "main": "truffle-config.js",
+  "scripts": {
+    "ganache": "ganache --host 0.0.0.0 --port 8545",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate --network development",
+    "test": "truffle test"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "certificate",
+    "truffle",
+    "ganache"
+  ],
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "ganache": "^7.9.1",
+    "solc": "^0.8.21",
+    "truffle": "^5.11.5"
+  }
+}
